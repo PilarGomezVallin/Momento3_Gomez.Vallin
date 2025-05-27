@@ -12,7 +12,7 @@ const finalMovesDisplay = document.getElementById('final-moves');
 const timerProgress = document.querySelector('.timer-progress');
 
 // Variables del juego
-let timeLeft = 60;
+let timeLeft = 40;
 let moves = 0;
 let timer;
 let flippedCards = [];
@@ -125,7 +125,7 @@ function checkMatch() {
 
 // Función para iniciar el temporizador
 function startTimer() {
-    const totalTime = 60;
+    const totalTime = 40;
     timeLeft = totalTime;
     timerProgress.style.width = '100%';
     
@@ -154,7 +154,7 @@ function endGame(won) {
 
 // Event Listeners
 startButton.addEventListener('click', () => {
-    timeLeft = 60;
+    timeLeft = 40;
     moves = 0;
     matchedPairs = 0;
     flippedCards = [];
