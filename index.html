@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Test Coca-Cola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de Bienvenida -->
+    <div id="welcome-screen" class="screen active">
+        <img src="./assets/img/cocacola-logo.png" alt="Coca-Cola Logo" class="welcome-logo">
+        <h1>¡COCA-COLA: DESTAPA LA MEMORIA!</h1>
+        <h2 class="subtitle">Encuentra las parejas y gana premios refrescantes</h2>
+        <button id="start-button">COMENZAR A JUGAR</button>
+    </div>
+
+    <!-- Pantalla del Juego -->
+    <div id="game-screen" class="screen">
+        <div class="game-header">
+            <div class="timer-container">
+                <div class="timer-bar">
+                    <div class="timer-progress"></div>
+                </div>
+                <div class="timer-text">Tiempo: <span id="time">60</span>s</div>
+            </div>
+            <div class="moves">Movimientos: <span id="moves">0</span></div>
+        </div>
+        <p class="game-message">¡Concentración al máximo! Encuentra las parejas</p>
+        <div id="game-board" class="game-board">
+            <!-- Las cartas se generarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Pantalla de Resultado -->
+    <div id="result-screen" class="screen">
+        <h2 id="result-message"></h2>
+        <div id="final-stats">
+            <p>Movimientos totales: <span id="final-moves"></span></p>
+        </div>
+        <button id="play-again-button">JUGAR DE NUEVO</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
