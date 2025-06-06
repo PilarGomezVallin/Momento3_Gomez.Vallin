@@ -125,7 +125,7 @@ function checkMatch() {
 
 // Función para iniciar el temporizador
 function startTimer() {
-    const totalTime = 40;
+    const totalTime = 60;
     timeLeft = totalTime;
     timerProgress.style.width = '100%';
     
