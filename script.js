@@ -144,7 +144,7 @@ function startTimer() {
 function endGame(won) {
     clearInterval(timer);
     if (won) {
-        resultMessage.textContent = '¡FELICIDADES, CAMPEÓN DE LA MEMORIA! Has ganado un un gaseosa de tu preferencia y un elemento del Merchandasing de Coca-Cola';
+        resultMessage.textContent = '¡FELICIDADES, CAMPEÓN DE LA MEMORIA! Has ganado una gaseosa de tu preferencia y una remera del merchandising de Coca - Cola';
     } else {
         resultMessage.textContent = '¡Se acabó el tiempo! ¿Quieres intentarlo de nuevo?';
     }
